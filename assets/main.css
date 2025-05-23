@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+/* Шрифты и плавность */
+body {
+  @apply font-sans text-gray-800 bg-gray-50 antialiased transition-colors duration-300 ease-in-out;
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-gray-900;
+}
+
+/* Основной контейнер (если нужен global wrap) */
+.container-main {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Кнопки */
+.btn-primary {
+  @apply bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-2 rounded-xl shadow transition;
+}
+
+.btn-secondary {
+  @apply bg-gray-300 hover:bg-gray-400 text-gray-800 font-medium px-5 py-2 rounded-xl transition;
+}
+
+/* Интерактивные элементы */
+input, textarea, select {
+  @apply border border-gray-300 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-indigo-400;
+}
+
+/* Карточки / блоки */
+.card {
+  @apply bg-white rounded-2xl shadow p-6 sm:p-8 border border-gray-100;
+}
+
+/* Таблицы */
+.table-basic {
+  @apply table-auto w-full border-collapse text-sm;
+}
+
+.table-basic th {
+  @apply bg-gray-100 text-left px-4 py-2 border-b font-medium text-gray-700;
+}
+
+.table-basic td {
+  @apply px-4 py-2 border-b;
+}
+
+/* Текстовые стили */
+p {
+  @apply leading-relaxed mb-4;
+}
+
+/* Ссылки */
+a {
+  @apply text-indigo-600 hover:text-indigo-800 transition;
+}
+
+/* Тень при фокусе */
+:focus-visible {
+  @apply outline-none ring-2 ring-indigo-500;
+}
